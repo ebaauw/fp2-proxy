@@ -1,6 +1,6 @@
 <span align="center">
 
-# Homebridge deCONZ
+# FP2 Proxy
 [![Downloads](https://img.shields.io/npm/dt/fp2-proxy)](https://www.npmjs.com/package/fp2-proxy)
 [![Version](https://img.shields.io/npm/v/fp2-proxy)](https://www.npmjs.com/package/fp2-proxy)
 
