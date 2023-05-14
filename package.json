@@ -1,0 +1,54 @@
+{
+  "name": "fp2-proxy",
+  "description": "Proxy for Aqara Presence Sensor FP2",
+  "displayName": "FP2 Proxy",
+  "author": "Erik Baauw",
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "keywords": [
+    "aqara",
+    "fp2",
+    "mmWave",
+    "deconz",
+    "raspbee",
+    "conbee",
+    "dresden-elektronik",
+    "dresdenelektronik",
+    "hue",
+    "philips",
+    "philipshue"
+  ],
+  "main": "cli/fp2-proxy.js",
+  "bin": {
+    "fp2-proxy": "cli/fp2-proxy.js"
+  },
+  "engines": {
+    "node": "^18.16.0"
+  },
+  "dependencies": {
+    "hb-lib-tools": "~1.0.9",
+    "hap-proxy": "~0.4.1"
+  },
+  "scripts": {
+    "prepare": "standard",
+    "test": "standard && echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebaauw/fp2-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ebaauw/fp2-proxy/issues"
+  },
+  "homepage": "https://github.com/ebaauw/fp2-proxy#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/ebaauw"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/ebaauw/EUR"
+    }
+  ]
+}
