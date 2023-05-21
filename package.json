@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "hb-lib-tools": "~1.0.9",
+    "hb-deconz-tools": "~1.0.2",
     "hap-proxy": "~0.4.1"
   },
   "scripts": {
