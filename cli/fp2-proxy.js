@@ -1,29 +1,13 @@
-const { ApiClient } = require('homebridge-deconz')
+#!/usr/bin/env node
 
-const client = new ApiClient()
+// fp2-proxy.js
+// Copyright © 2023 Erik Baauw. All rights reserved.
+//
+// Proxy for Aqara Presence Sensor FP2.
 
-const manufacturername = 'Aqara'
-const modelid = 'PS-S02D'
-const swversion = '1.1.6_0005'
-const mac = '54:ef:44:ff:fe:4a:85:0f'
-const name = 'Dining Room Presence'
+'use strict'
 
-const presenceId = await client.post('/sensors', {
-  type: 'CLIPPresence',
-  manufacturername,
-  modelid,
-  swversion,
-  uniqueid: [mac, '01', '0406'].join('-'),
-  name
-})
+const Fp2Proxy = require('../lib/Fp2Proxy')
+const pkgJson = require('../package.json')
 
-const lightLevelId = await client.post('/sensors', {
-  type: 'CLIPLightLevel',
-  manufacturername,
-  modelid,
-  swversion,
-  uniqueid: [mac, '01', '0400'].join('-'),
-  name
-})
-
-console.log('presence: %d, lightlevel: %d', presenceId, lightLevelId)
+new Fp2Proxy(pkgJson).main()
