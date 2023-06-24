@@ -23,11 +23,11 @@
     "fp2-proxy": "cli/fp2-proxy.js"
   },
   "engines": {
-    "node": "^18.16.0"
+    "node": "^18.16.1"
   },
   "dependencies": {
-    "hb-lib-tools": "~1.0.9",
-    "hb-deconz-tools": "~1.0.2",
+    "hb-lib-tools": "~1.0.10",
+    "hb-deconz-tools": "~1.0.3",
     "hap-proxy": "~0.4.1"
   },
   "scripts": {
