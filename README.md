@@ -25,7 +25,7 @@ as the Homebridge plugins include additional characteristics for _Last Motion_, 
 ## Work in Progress
 This repository is work in progress.
 Notably, the following features have yet to be implemented:
-- Connection to the FP2 over HAP.
+- Use a "lite", native JavaScript clone of `hap-controller` without the BLE logic;
 - Connection to Hue bridge instead of deCONZ gateway.
 
 ### Aqara FP2
@@ -36,8 +36,8 @@ However, unlike the FP1, the FP2 communicates over WiFi rather than Zigbee.
 It supports HomeKit natively, exposing an _Occupancy Sensor_ and _Light Sensor_ service by default.
 
 The FP2 can be bound to the Aqara app, next to its pairing with HomeKit.
-It is configured through the Aqara app, as far as I can tell over the Aqara Home server in the cloud.
-Once configured, the sensor can be unbound from the app, and no longer communicates with the Aqara Home server.
+It is configured through the Aqara app, as far as I can tell over the Aqara IoT server in the cloud.
+Once configured, the sensor can be unbound from the app, and no longer communicates with the Aqara IoT server.
 For each configured detection zone, an additional _Occupancy Sensor_ service is exposed to HomeKit.
 
 ### Virtual Device
@@ -56,12 +56,12 @@ Typically, you would run `fp2-proxy` as a service on system startup.
 I recommend running `fp2-proxy` on the same server as deCONZ.
 
 `fp2-proxy` keeps its configuration in a hidden configuration file, `~/.fp2-proxy`.
-It contains parameters like the API key for the deCONZ gateway, and the HomeKit setup code for the FP2.
+It contains parameters like the API key for the deCONZ gateway, and the HomeKit pair data for the FP2.
 While running, `fp-proxy` monitors the configuration file for changes,
 adding or deleting virtual FP2 devices on the deCONZ gateway, as FP2 devices are paired or unpaired.
-To pair or unpair FP2 devices, run `fp-proxy pair` or `fp-proxy unpair`.
+To pair or unpair FP2 devices, run `fp2-proxy pair` or `fp2-proxy unpair`.
 
 ## Acknowledgements
 Conceptually, `fp2-proxy` consists of a HAP client to connect to the FP2 devices, and a REST API client to connect to the deCONZ gateway or Hue bridge.
-The HAP client is from Andi's [hap-proxy](https://github.com/Supereg/hap-proxy).
-The REST API clients are from Homebridge deCONZ and Homebridge Hue2.
+The HAP client is from [hap-controller](https://github.com/Apollon77/hap-controller-node).
+The REST API client is ~~s are~~ from Homebridge deCONZ ~~and Homebridge Hue2~~.
