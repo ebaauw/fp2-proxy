@@ -26,9 +26,9 @@
     "node": "^18.16.1"
   },
   "dependencies": {
-    "hb-lib-tools": "~1.0.10",
     "hb-deconz-tools": "~1.0.3",
-    "hap-proxy": "~0.4.1"
+    "hb-lib-tools": "~1.0.10",
+    "hap-controller": "^0.9.3"
   },
   "scripts": {
     "prepare": "standard",
