@@ -13,22 +13,19 @@
     "raspbee",
     "conbee",
     "dresden-elektronik",
-    "dresdenelektronik",
-    "hue",
-    "philips",
-    "philipshue"
+    "dresdenelektronik"
   ],
   "main": "cli/fp2-proxy.js",
   "bin": {
     "fp2-proxy": "cli/fp2-proxy.js"
   },
   "engines": {
-    "node": "20.10.0||^20||^18"
+    "node": "^20||^18"
   },
   "dependencies": {
     "hap-controller": "^0.10.1",
-    "hb-deconz-tools": "~1.0.13",
-    "hb-lib-tools": "~1.2.1"
+    "hb-deconz-tools": "~1.0.14",
+    "hb-lib-tools": "~1.2.3"
   },
   "scripts": {
     "prepare": "standard",
