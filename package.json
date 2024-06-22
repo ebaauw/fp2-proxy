@@ -3,6 +3,9 @@
   "description": "Proxy for Aqara Presence Sensor FP2",
   "displayName": "FP2 Proxy",
   "author": "Erik Baauw",
+  "maintainers": [
+    "ebaauw"
+  ],
   "license": "Apache-2.0",
   "version": "0.0.1-0",
   "keywords": [
