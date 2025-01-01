@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // fp2-proxy.js
-// Copyright © 2023-2024 Erik Baauw. All rights reserved.
+// Copyright © 2023-2025 Erik Baauw. All rights reserved.
 //
 // Proxy for Aqara Presence Sensor FP2.
 

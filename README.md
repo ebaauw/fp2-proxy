@@ -11,7 +11,7 @@
 </span>
 
 ## Proxy for Aqara Presence Sensor FP2
-Copyright © 2023-2024 Erik Baauw. All rights reserved.
+Copyright © 2023-2025 Erik Baauw. All rights reserved.
 
 This repository provides a daemon programme, `fp2-proxy`, that creates a virtual device, mirroring an [Aqara Presence Sensor FP2](https://www.aqara.com/eu/product/presence-sensor-fp2), on a [deCONZ gateway](https://github.com/dresden-elektronik/deconz-rest-plugin) ~~or [Hue](https://www.philips-hue.com/) bridge~~.
 
