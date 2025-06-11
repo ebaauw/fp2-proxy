@@ -5,9 +5,11 @@
 //
 // Proxy for Aqara Presence Sensor FP2.
 
-'use strict'
+import { createRequire } from 'node:module'
 
-const Fp2Proxy = require('../lib/Fp2Proxy')
-const pkgJson = require('../package.json')
+import { Fp2Proxy } from '../lib/Fp2Proxy.js'
 
-new Fp2Proxy(pkgJson).main()
+const require = createRequire(import.meta.url)
+const packageJson = require('../package.json')
+
+new Fp2Proxy(packageJson).main()
