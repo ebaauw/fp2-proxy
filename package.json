@@ -7,7 +7,7 @@
     "ebaauw"
   ],
   "license": "Apache-2.0",
-  "version": "0.0.1-0",
+  "version": "0.0.1-1",
   "keywords": [
     "aqara",
     "fp2",
@@ -22,7 +22,7 @@
   "main": "cli/fp2-proxy.js",
   "exports": {
     ".": "./cli/fp2-proxy.js",
-    "./*": "./lib/*.js" 
+    "./*": "./lib/*.js"
   },
   "bin": {
     "fp2-proxy": "cli/fp2-proxy.js"
