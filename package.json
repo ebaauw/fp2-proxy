@@ -28,12 +28,12 @@
     "fp2-proxy": "cli/fp2-proxy.js"
   },
   "engines": {
-    "node": "^22"
+    "node": "^24||^22"
   },
   "dependencies": {
-    "hap-controller": "^0.10.1",
-    "hb-deconz-tools": "~2.0.12",
-    "hb-lib-tools": "~2.2.5"
+    "hap-controller": "^0.10.2",
+    "hb-deconz-tools": "~2.0.18",
+    "hb-lib-tools": "~2.2.13"
   },
   "scripts": {
     "prepare": "standard",
