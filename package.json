@@ -32,8 +32,8 @@
   },
   "dependencies": {
     "hap-controller": "^0.10.2",
-    "hb-deconz-tools": "~2.0.21",
-    "hb-lib-tools": "~2.2.16"
+    "hb-deconz-tools": "~3.0.3",
+    "hb-lib-tools": "~3.0.5"
   },
   "scripts": {
     "prepare": "standard",
